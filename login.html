@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход в систему</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+</head>
+<body>
+	<header class="black width">
+		<div class="prewidth">
+			<img src="Images/Logo.png" class="logo">
+			<div class="logo right block">
+				<a href="index.html" class="links-white blocklist">Главная</a>
+				<a href="login.html" class="links-white blocklist">Вход</a>
+			</div>
+		</div>
+	</header>
+	<div class="width height">
+    	<div class="container prewidth height background">
+			<br>
+			<div class="white height pad">
+				<h1>Выполните вход</h1>
+        		<form role="form" action="login-result.html" method="get">
+					<div class="form-group">
+						<label for="userNameInput">Имя пользователя:</label>
+						<input id="userNameInput" name="username" type="text" class="form-control form-login" />
+					</div>
+					<br>
+					<div class="form-group">
+						<label for="password">Пароль:</label>
+						<input id="password" name="pwd" type="password" class="m form-control form-login" />
+					</div>
+					<br>
+					<button type="submit" class="btn btn-default button-search">Войти</button>
+					<p id="errorMessage" style="display: none;" class="alert alert-danger">Неверный логин или пароль!</p>
+        		</form>
+			</div>
+			<br>
+		</div>
+	</div>
+	<footer class="width heightF black">
+		<div class="prewidth">
+			<p class="weight">Наши контакты:</p>
+			<div class="left">
+				<ul class="cmminfo">
+					<li><a class="cmminfo links-white" target="_blank" href="https://www.instagram.com/kind_er__/"><img src="Images/ig.png" class="cmm">Instagram</a></li>
+					<li><a  class="cmminfo links-white" target="_blank" href="https://www.facebook.com/profile.php?id=100013936935175"><img src="Images/fb.png" class="cmm">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script>
+        var sPageURL = decodeURIComponent(window.location.search.substring(1));
+        if(sPageURL && sPageURL.indexOf("bad_user=1")>=0) {
+            document.getElementById("errorMessage").style.display = 'block';
+        }
+        else
+            document.getElementById("errorMessage").style.display = 'none';
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добро пожаловать!</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="Images/favicon.png" type="image/png">
+</head>
+<body>
+	<header class="black width">
+		<div class="prewidth">
+			<img src="Images/Logo.png" class="logo">
+			<div class="logo right block">
+				<a href="index.html" class="links-white blocklist">Главная</a>
+				<a href="login.html" class="links-white blocklist">Вход</a>
+			</div>
+		</div>
+	</header>
+	<div class="width height">
+    	<div class="content prewidth height background">
+			<br>
+			<div class="white height pad">
+        		<div id="userPanel" class="well userPanel">
+					<p>Добро Пожаловать, <span id="userName"></span></p>
+            		<button class="button danger button-search" onclick="logout()">Вийти из системы</button>
+				</div>
+			</div>
+			<br>
+    	</div>
+	</div>
+	<footer class="width heightF black">
+		<div class="prewidth">
+			<p class="weight">Наши контакты:</p>
+			<div class="left">
+				<ul class="cmminfo">
+					<li><a class="cmminfo links-white" target="_blank" href="https://www.instagram.com/kind_er__/"><img src="Images/ig.png" class="cmm">Instagram</a></li>
+					<li><a  class="cmminfo links-white" target="_blank" href="https://www.facebook.com/profile.php?id=100013936935175"><img src="Images/fb.png" class="cmm">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+    <script src="js/check-login.js" type="text/javascript"></script>
+</body>
+</html>
