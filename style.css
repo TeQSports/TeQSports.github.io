@@ -100,9 +100,6 @@ body {
 .center{
 	text-align: center;
 }
-.heigh {
-	height: 1500px;
-}
 .form-login {
 	width: 15%;
 	height: 25px;
@@ -114,7 +111,7 @@ body {
 	font-weight: bold;
 }
 .height {
-	height: 325px;
+	height: 350px;
 }
 .heightF {
 	height: 325px;
